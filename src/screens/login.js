@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function LoginScreen() {
   return (
     <>
@@ -66,12 +68,12 @@ export default function LoginScreen() {
 
             <p className="mt-8">
               Need an account?{" "}
-              <a
-                href="/register"
+              <Link
+                to={"/register"}
                 className="text-blue-500 hover:text-blue-700 font-semibold"
               >
                 Create an account
-              </a>
+              </Link>
             </p>
           </div>
         </div>
