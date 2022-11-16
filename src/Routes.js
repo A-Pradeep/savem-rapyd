@@ -1,10 +1,17 @@
-import ErrorPage from "./screens/error-page";
 import LoginScreen from "./screens/login";
+import RegisterScreen from "./screens/register";
 
 export const StandardRoutes = [
   {
     path: "/",
     element: <LoginScreen />,
-    errorElement: <ErrorPage />,
+  },
+  {
+    path: "/login",
+    element: <LoginScreen />,
+  },
+  {
+    path: "/register",
+    element: <RegisterScreen />,
   },
 ];
